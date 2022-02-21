@@ -1,3 +1,4 @@
+// Created by Morcov-Pahoncea Răzvan on 21 Feb 2022
 public class Compulsory {
     public static void run() {
         String[] languages = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
