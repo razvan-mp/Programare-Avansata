@@ -15,9 +15,22 @@ public class Homework {
         return false;
     }
 
+    public static boolean isNotChar(String str) {
+        if (str.length() != 1) {
+            return true;
+        }
+
+        try {
+            Character.isLetter(str.charAt(0));
+        } catch (IllegalArgumentException e) {
+            return true;
+        }
+        return false;
+    }
+
     public static void run(String[] args) {
         long ts = System.nanoTime();
-        System.out.println("Ex 2: ");
+        System.out.print("Ex 2: ");
         if (args.length == 0) {
             System.out.println("Enter at least three arguments to run exercise 2!");
             return;
@@ -25,6 +38,12 @@ public class Homework {
             if (isNotNumber(args[0]) || isNotNumber(args[1])) {
                 System.out.println("Invalid arguments! Syntax is: java Program <int> <int> <char> ... <char>");
                 return;
+            }
+            for (int i = 2; i < args.length; i++) {
+                if (isNotChar(args[i])) {
+                    System.out.println("Invalid arguments! You must provide only chars as the alphabet!");
+                    return;
+                }
             }
         }
 
@@ -55,7 +74,7 @@ public class Homework {
             }
         }
 
-        if (n < 10_000) {
+        if (n < 30_000) {
             System.out.println("Generated words:\n" + words + "\n");
             Utils.printMatrix(adjacency, n);
             Utils.printNeighbourList(neighbours);
@@ -63,5 +82,7 @@ public class Homework {
         long tf = System.nanoTime();
         long t = tf - ts;
         System.out.println("Time in nanoseconds: " + t);
+
+        Bonus.run(words, neighbours);
     }
 }

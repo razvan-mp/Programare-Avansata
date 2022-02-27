@@ -2,5 +2,6 @@
 public class Program {
     public static void main(String[] args) {
         Compulsory.run();
+        Homework.run(args);
     }
 }

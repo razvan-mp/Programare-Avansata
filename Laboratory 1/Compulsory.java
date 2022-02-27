@@ -1,4 +1,3 @@
-// Created by Morcov-Pahoncea Răzvan on 21 Feb 2022
 public class Compulsory {
     public static void run() {
         String[] languages = {"C", "C++", "C#", "Python", "Go", "Rust", "JavaScript", "PHP", "Swift", "Java"};
@@ -9,8 +8,7 @@ public class Compulsory {
         n *= 6;
 
         int result = 0;
-        while (n > 0 || result > 9)
-        {
+        while (n > 0 || result > 9) {
             if (n == 0) {
                 n = result;
                 result = 0;
@@ -19,6 +17,7 @@ public class Compulsory {
             n /= 10;
         }
 
+        System.out.print("Ex 1: ");
         System.out.println("Willy-nilly, this semester I will learn " + languages[result]);
     }
 }
