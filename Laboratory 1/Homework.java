@@ -6,28 +6,6 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Homework {
-    public static boolean isNotNumber(String str) {
-        try {
-            Integer.parseInt(str);
-        } catch (NumberFormatException e) {
-            return true;
-        }
-        return false;
-    }
-
-    public static boolean isNotChar(String str) {
-        if (str.length() != 1) {
-            return true;
-        }
-
-        try {
-            Character.isLetter(str.charAt(0));
-        } catch (IllegalArgumentException e) {
-            return true;
-        }
-        return false;
-    }
-
     public static void run(String[] args) {
         long ts = System.nanoTime();
         System.out.print("Ex 2: ");
@@ -35,12 +13,12 @@ public class Homework {
             System.out.println("Enter at least three arguments to run exercise 2!");
             return;
         } else {
-            if (isNotNumber(args[0]) || isNotNumber(args[1])) {
+            if (Utils.isNotNumber(args[0]) || Utils.isNotNumber(args[1])) {
                 System.out.println("Invalid arguments! Syntax is: java Program <int> <int> <char> ... <char>");
                 return;
             }
             for (int i = 2; i < args.length; i++) {
-                if (isNotChar(args[i])) {
+                if (Utils.isNotChar(args[i])) {
                     System.out.println("Invalid arguments! You must provide only chars as the alphabet!");
                     return;
                 }
@@ -83,6 +61,6 @@ public class Homework {
         long t = tf - ts;
         System.out.println("Time in nanoseconds: " + t);
 
-        Bonus.run(words, neighbours);
+        Bonus.run(adjacency);
     }
 }
