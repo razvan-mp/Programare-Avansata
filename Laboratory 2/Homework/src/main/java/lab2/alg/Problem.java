@@ -1,0 +1,80 @@
+/**
+ * @author Răzvan-Morcov Pahoncea
+ * @version
+ */
+
+package lab2.alg;
+
+import lab2.model.ComputerLab;
+import lab2.model.Event;
+import lab2.model.LectureHall;
+import lab2.model.Room;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Problem class that generates two lists with events and rooms,
+ * readying them for the Solution class.
+ */
+public class Problem {
+    private List<Event> eventList;
+    private List<Room> roomList;
+
+    /**
+     * Class constructor, taking three user-given numbers
+     * as parameters and immediately calling the <code>populateLists</code> method.
+     */
+    public Problem(int eventNumber, int computerLabNumber, int lectureHallNumber) {
+        populateLists(eventNumber, computerLabNumber, lectureHallNumber);
+    }
+
+    /**
+     * Second class constructor, used for the doctored input.
+     */
+    public Problem(List<Event> eventList, List<Room> roomList) {
+        this.eventList = eventList;
+        this.roomList = roomList;
+    }
+
+    public List<Event> getEventList() {
+        return eventList;
+    }
+
+    public List<Room> getRoomList() {
+        return roomList;
+    }
+
+    /**
+     * Generate events and rooms with random specifications (but with predefined values, for practical
+     * reasons); uses the <code>Utils</code> class for cleaner code.
+     */
+    private void populateLists(int eventNumber, int computerLabNumber, int lectureHallNumber) {
+        this.eventList = new ArrayList<>();
+        this.roomList = new ArrayList<>();
+
+        int numIndicator = 0, startTime;
+        String name;
+
+        for (int i = 0; i < eventNumber; i++) {
+            name = "Event " + numIndicator;
+            startTime = Utils.getRandTime();
+            eventList.add(new Event(name, Utils.getRandSize(), startTime, Utils.getRandTime(startTime)));
+            numIndicator++;
+        }
+
+        numIndicator = 0;
+        for (int i = 0; i < computerLabNumber; i++) {
+            name = "Computer Lab " + numIndicator;
+            roomList.add(new ComputerLab(name, Utils.getRandSize(), Utils.getRandOS()));
+            numIndicator++;
+        }
+
+        numIndicator = 0;
+        for (int i = 0; i < lectureHallNumber; i++) {
+            name = "Lecture Hall " + numIndicator;
+            roomList.add(new LectureHall(name, Utils.getRandSize(), Utils.getRandDecision()));
+            numIndicator++;
+        }
+    }
+}
