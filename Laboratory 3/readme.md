@@ -3,3 +3,4 @@
 - done before the third laboratory
 - used interfaces
 - created packages for ```app```, ```model```
+- used ```default``` methods
