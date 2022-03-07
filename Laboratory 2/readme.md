@@ -10,3 +10,7 @@
 - used a greedy approach for solving the problem
 - used abstract classes
 - created ```Utils``` class for cleaner code and overall decluttering
+## Bonus
+- done before the third laboratory
+- started work on the implementation of the ```DSatur()``` method
+- measured execution time in _ms_ for the _Greedy_ approach
