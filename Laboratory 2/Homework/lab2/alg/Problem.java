@@ -33,6 +33,16 @@ public class Problem {
     }
 
     /**
+     * Class constructor, taking two lists as arguments.
+     * @param eventList list of events given as input
+     * @param roomList list of rooms given as inputs
+     */
+    public Problem(List<Event> eventList, List<Room> roomList) {
+        this.eventList = eventList;
+        this.roomList = roomList;
+    }
+
+    /**
      * Gets a list of events
      * @return list of events
      */
