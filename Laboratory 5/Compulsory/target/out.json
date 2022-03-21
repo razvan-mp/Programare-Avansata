@@ -1,0 +1,34 @@
+[
+  {
+    "identifier": "knuth67",
+    "title": "The Art of Computer Programming",
+    "location": "d:/books/programming/tacp.ps",
+    "year": "1967",
+    "author": "Donald E. Knuth",
+    "type": "BOOK"
+  },
+  {
+    "identifier": "java17",
+    "title": "The Java Language Specification",
+    "location": "docs.oracle.com/index.html",
+    "year": "2021",
+    "author": "James Gosling \u0026 Others",
+    "type": "ARTICLE"
+  },
+  {
+    "identifier": "java19",
+    "title": "Ceva",
+    "location": "docs.oracle.com/index.html",
+    "year": "2021",
+    "author": "James Gosling \u0026 Others",
+    "type": "ARTICLE"
+  },
+  {
+    "identifier": "knuth12",
+    "title": "Altceva",
+    "location": "docs.oracle.com/index.html",
+    "year": "2011",
+    "author": "James Gosling \u0026 Others",
+    "type": "ARTICLE"
+  }
+]

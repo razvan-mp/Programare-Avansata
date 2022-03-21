@@ -9,6 +9,9 @@ public class Main {
 
         Set<Intersection> intersectionSet = new HashSet<>(Arrays.stream(nodes).toList());
 
+        intersectionSet.add(new Intersection("v3"));
+        System.out.println(intersectionSet);
+
         List<Street> streetList = new LinkedList<>();
         streetList.add(new Street("s1", 2, nodes[0], nodes[1]));
         streetList.add(new Street("s2", 2, nodes[0], nodes[6]));
@@ -26,14 +29,8 @@ public class Main {
         streetList.add(new Street("s14", 1, nodes[3], nodes[8]));
         streetList.add(new Street("s15", 1, nodes[8], nodes[4]));
 
-        // lambda sort for streetList
-        streetList.sort((o1, o2) -> {
-            if (o1.getLength() == o2.getLength())
-                return 0;
-            if (o1.getLength() > o2.getLength())
-                return 1;
-            return -1;
-        });
+        // method reference sort for street lengths
+        streetList.sort(Comparator.comparingDouble(Street::getLength));
 
         System.out.println(streetList);
     }
