@@ -15,10 +15,10 @@ public class Graph {
      * @param edges number of edges
      */
     public Graph(int vertices, int edges) {
-        vertexNumber = vertices;
-        edge = new Edge[edges];
+        this.vertexNumber = vertices;
+        this.edge = new Edge[edges];
         for (int i = 0; i < edges; ++i)
-            edge[i] = new Edge();
+            this.edge[i] = new Edge();
     }
 
     public int findRoot(vertexSubset[] subsets, int i) {
@@ -71,7 +71,7 @@ public class Graph {
         }
 
         int i = 0;
-        while (e < vertexNumber - 3) {
+        while (e < vertexNumber/2) {
             Edge next_edge = edge[i++];
             int firstRoot = findRoot(vertexSubsets, next_edge.src);
             int secondRoot = findRoot(vertexSubsets, next_edge.dest);

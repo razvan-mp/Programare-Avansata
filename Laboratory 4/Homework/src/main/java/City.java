@@ -10,11 +10,16 @@ public class City {
 
     public City(Integer streetNum) {
         Faker faker = new Faker();
-        Random value = new Random();
 
         intersectionSet = IntStream.rangeClosed(0, streetNum - 1).mapToObj(i -> new Intersection(faker.address().streetName().split(" ")[1])).collect(Collectors.toSet());
-        var intersections = intersectionSet.stream().toList();
+        createStreetList(streetNum);
+    }
 
+    public void createStreetList(Integer streetNum) {
+        Faker faker = new Faker();
+        Random value = new Random();
+
+        var intersections = intersectionSet.stream().toList();
         for (int index = 0; index <= streetNum; index++) {
             var i1Index = value.nextInt(streetNum / 2 - 1);
             var i2Index = value.nextInt(streetNum / 2, streetNum - 1);

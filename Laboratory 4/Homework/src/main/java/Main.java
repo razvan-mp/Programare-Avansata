@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        City myCity = new City(6);
+        City myCity = new City(12);
 
         System.out.println("Street list: ");
         myCity.printStreets();
