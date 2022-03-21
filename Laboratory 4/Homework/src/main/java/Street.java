@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Street {
     private final String name;
     private final double length;
@@ -27,7 +25,10 @@ public class Street {
 
     @Override
     public String toString() {
-        return "Street " + this.name + " connects the following intersections: " +
-                Arrays.toString(intersections) + ".\n";
+        return this.name;
+    }
+
+    public boolean containsIntersection(Intersection intersection) {
+        return this.intersections[0] == intersection || this.intersections[1] == intersection;
     }
 }

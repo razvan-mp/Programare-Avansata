@@ -4,24 +4,24 @@ import java.lang.*;
 /**
  * implements a <code>Graph</code>-like structure
  */
-class Graph {
+public class Graph {
     private final int vertexNumber;
-    protected Edge[] edge;
+    public Edge[] edge;
 
     /**
-     * creates a graph with <code>v</code> vertices and <code>e</code> edges
+     * creates a graph with <code>vertices</code> vertices and <code>edges</code> edges
      *
-     * @param v number of vertices
-     * @param e number of edges
+     * @param vertices number of vertices
+     * @param edges number of edges
      */
-    Graph(int v, int e) {
-        vertexNumber = v;
-        edge = new Edge[e];
-        for (int i = 0; i < e; ++i)
+    public Graph(int vertices, int edges) {
+        vertexNumber = vertices;
+        edge = new Edge[edges];
+        for (int i = 0; i < edges; ++i)
             edge[i] = new Edge();
     }
 
-    protected int findRoot(vertexSubset[] subsets, int i) {
+    public int findRoot(vertexSubset[] subsets, int i) {
         if (subsets[i].parent != i)
             subsets[i].parent
                     = findRoot(subsets, subsets[i].parent);
@@ -32,7 +32,7 @@ class Graph {
     /**
      * does union between sets based on ranks
      */
-    protected void setUnion(vertexSubset[] vertexSubsets, int firstVertex, int secondVertex) {
+    public void setUnion(vertexSubset[] vertexSubsets, int firstVertex, int secondVertex) {
         int firstRoot = findRoot(vertexSubsets, firstVertex);
         int secondRoot = findRoot(vertexSubsets, secondVertex);
 
@@ -52,7 +52,7 @@ class Graph {
      * <code>int e</code> is an index variable used for <code>result</code>
      * will sort edges non-decreasingly by weight
      */
-    protected void KruskalMST() {
+    public void KruskalMST() {
         Edge[] result = new Edge[vertexNumber];
         int e = 0;
 
@@ -98,8 +98,10 @@ class Graph {
     /**
      * represents a <code>Graph</code>'s edge
      */
-    static class Edge implements Comparable<Edge> {
-        int src, dest, weight;
+    public static class Edge implements Comparable<Edge> {
+        public int src;
+        public int dest;
+        public int weight;
 
         public int compareTo(Edge compareEdge) {
             return this.weight - compareEdge.weight;

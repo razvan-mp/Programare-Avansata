@@ -1,6 +1,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
 import com.github.javafaker.Faker;
 
 public class City {
@@ -25,6 +26,25 @@ public class City {
         for (var street : streetList) {
             System.out.println(street.getName() + " " + Arrays.toString(street.getIntersections()));
         }
+    }
+
+    public void getSpecificLengthStreets(Double length) {
+        Map<Intersection, List<Street>> cityMap = new HashMap<>();
+
+        for (Intersection intersection : intersectionSet) {
+            List<Street> intersectionStreets = new ArrayList<>();
+
+            for (Street street : streetList)
+                if (street.containsIntersection(intersection)) {
+                    intersectionStreets.add(street);
+                }
+            cityMap.put(intersection, intersectionStreets);
+        }
+
+        streetList.stream().filter(street -> street.getLength() >= length).
+                filter(street -> (cityMap.get(street.getIntersections()[0]).size() +
+                        cityMap.get(street.getIntersections()[1]).size()) >= 3).
+                forEach(System.out::println);
     }
 
     public void solveProblem() {
