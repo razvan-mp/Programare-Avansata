@@ -3,31 +3,50 @@ package model.interfaces;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
-import model.enums.ItemType;
+
+import model.base.*;
+
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
+import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import exceptions.DuplicateIDException;
 import exceptions.InvalidYearException;
 
-public abstract class Item {
-    private final static List<String> identifiers = new ArrayList<>();
-    private String identifier;
-    private final String title;
-    private final String location;
-    private String year;
-    private final String author;
-    private final ItemType type;
+@JsonTypeInfo(use = Id.NAME,
+        property = "type")
+@JsonSubTypes({
+        @Type(value = Book.class, name = "book"),
+        @Type(value = Article.class, name = "article"),
+        @Type(value = Other.class, name = "other"),
+})
 
-    protected Item(String title, String location, String year, String author, String type, String identifier) {
+public abstract class Item {
+    private List<String> identifiers = new ArrayList<>();
+    private String identifier;
+    private String title;
+    private String location;
+    private String year;
+    private String author;
+
+    protected Item() {
+    }
+
+    protected Item(String title, String location, String year, String author, String identifier) {
         checkYear(Integer.valueOf(year));
         checkID(identifier);
         this.title = title;
         this.location = location;
         this.author = author;
-        this.type = ItemType.valueOf(type.toUpperCase());
     }
 
     public String getId() {
         return this.identifier;
     }
+
+    public void setIdentifiers(List<String> value) { identifiers = value; }
+
+    public void setId(String id) { this.identifier = id; }
 
     public String getTitle() {
         return this.title;
@@ -43,10 +62,6 @@ public abstract class Item {
 
     public String getAuthor() {
         return this.author;
-    }
-
-    public ItemType getType() {
-        return this.type;
     }
 
     private void checkYear(Integer year) {

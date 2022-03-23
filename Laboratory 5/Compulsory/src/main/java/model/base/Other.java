@@ -1,8 +1,28 @@
 package model.base;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import model.interfaces.Item;
 
 public class Other extends Item {
-    public Other(String id, String title, String location, Integer year, String author) {
-        super(title, location, year.toString(), author, "other", id);
+    public Other() {
+    }
+
+    @JsonCreator
+    public Other(@JsonProperty("id") String id, @JsonProperty("title") String title, @JsonProperty("location") String location,
+                 @JsonProperty("year") Integer year, @JsonProperty("author") String author) {
+        super(title, location, year.toString(), author, id);
+    }
+
+    public Other(String id, String title, String location, Integer year) {
+        super(title, location, year.toString(), "unknown", id);
+    }
+
+    public Other(String id, String title, String location, String author) {
+        super(title, location, "0", author, id);
+    }
+
+    public Other(String id, String title, String location) {
+        super(title, location, "0", "unknown", id);
     }
 }

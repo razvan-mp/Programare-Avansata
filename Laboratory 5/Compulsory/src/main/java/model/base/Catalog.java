@@ -1,16 +1,14 @@
 package model.base;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import java.io.FileReader;
-import java.io.FileWriter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.SerializationFeature;
 import model.interfaces.Item;
-import model.enums.ItemType;
 
 public class Catalog {
     protected List<Item> itemList;
@@ -33,19 +31,30 @@ public class Catalog {
     }
 
     public void save() throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        FileWriter fileWr = new FileWriter("target/out.json");
-        gson.toJson(itemList, fileWr);
-        fileWr.flush();
-        fileWr.close();
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+
+        mapper.writeValue(new File("target/out.json"), this);
     }
 
     public void load(String filePath) throws IOException {
-        Gson gson = new Gson();
-        FileReader fileRd = new FileReader(filePath);
-        Item[] newItemList = gson.fromJson(fileRd, Item[].class);
+        ObjectMapper mapper = new ObjectMapper();
+        Catalog tmp = mapper.readValue(new File(filePath), Catalog.class);
+
+        for (var item : this.itemList) {
+            item.setId(null);
+            item.setIdentifiers(null);
+        }
         this.itemList.clear();
-        this.itemList.addAll(Arrays.asList(newItemList));
+        this.itemList.addAll(tmp.itemList);
+    }
+
+    public List<Item> getItemList() {
+        return itemList;
+    }
+
+    public void setItemList(List<Item> itemList) {
+        this.itemList = itemList;
     }
 
     @Override
@@ -55,7 +64,16 @@ public class Catalog {
             sb.append("[\"identifier\":\"").append(item.getId()).append("\", \"title\":\"").append(item.getTitle());
             sb.append("\", \"location\":\"").append(item.getLocation()).append("\", \"year\":\"");
             sb.append(item.getYear()).append("\", \"author\":\"").append(item.getAuthor());
-            sb.append("\", \"type\":\"").append(item.getType().toString()).append("\"]\n");
+            sb.append("\", \"type\":\"");
+
+            if (item.getClass().isInstance(new Book()))
+                sb.append("book");
+            else if (item.getClass().isInstance(new Article()))
+                sb.append("article");
+            else
+                sb.append("other");
+
+            sb.append("\"]\n");
         }
         return sb.toString();
     }

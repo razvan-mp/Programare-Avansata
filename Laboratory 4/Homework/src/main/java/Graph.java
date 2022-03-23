@@ -72,11 +72,11 @@ public class Graph {
 
         int i = 0;
         while (e < vertexNumber/2) {
-            Edge next_edge = edge[i++];
-            int firstRoot = findRoot(vertexSubsets, next_edge.src);
-            int secondRoot = findRoot(vertexSubsets, next_edge.dest);
+            Edge nextEdge = edge[i++];
+            int firstRoot = findRoot(vertexSubsets, nextEdge.src);
+            int secondRoot = findRoot(vertexSubsets, nextEdge.dest);
             if (firstRoot != secondRoot) {
-                result[e++] = next_edge;
+                result[e++] = nextEdge;
                 setUnion(vertexSubsets, firstRoot, secondRoot);
             }
         }

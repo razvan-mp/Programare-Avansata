@@ -13,7 +13,7 @@ public class Main {
         Item i1 = new Book("knuth67", "The Art of Computer Programming", "d:/books/programming/tacp.ps", 1967, "Donald E. Knuth");
         Item i2 = new Article("java17", "The Java Language Specification", "docs.oracle.com/index.html", 2021, "James Gosling & Others");
         Item i3 = new Article("java19", "Ceva", "docs.oracle.com/index.html", 2021, "James Gosling & Others");
-        Item i4 = new Article("knuth12", "Altceva", "docs.oracle.com/index.html", 2011, "James Gosling & Others");
+        Item i4 = new Article("knuth12", "Perceval", "docs.oracle.com/index.html", 2011, "James Gosling & Others");
 
         myCatalog.addItem(i1);
         myCatalog.addItem(i2);
