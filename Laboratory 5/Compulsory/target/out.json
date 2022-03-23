@@ -1,0 +1,31 @@
+{
+  "itemList" : [ {
+    "type" : "book",
+    "id" : "knuth67",
+    "title" : "The Art of Computer Programming",
+    "location" : "d:/books/programming/tacp.ps",
+    "year" : "1967",
+    "author" : "Donald E. Knuth"
+  }, {
+    "type" : "article",
+    "id" : "java17",
+    "title" : "The Java Language Specification",
+    "location" : "docs.oracle.com/index.html",
+    "year" : "2021",
+    "author" : "James Gosling & Others"
+  }, {
+    "type" : "article",
+    "id" : "java19",
+    "title" : "Ceva",
+    "location" : "docs.oracle.com/index.html",
+    "year" : "2021",
+    "author" : "James Gosling & Others"
+  }, {
+    "type" : "article",
+    "id" : "knuth12",
+    "title" : "Perceval",
+    "location" : "docs.oracle.com/index.html",
+    "year" : "2011",
+    "author" : "James Gosling & Others"
+  } ]
+}
