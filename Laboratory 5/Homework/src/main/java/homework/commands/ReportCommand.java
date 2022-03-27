@@ -12,7 +12,7 @@ public class ReportCommand implements Command {
     public static void execute(String path, Catalog catalog) throws IOException, TemplateException {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_31);
 
-        cfg.setDirectoryForTemplateLoading(new File("target\\"));
+        cfg.setDirectoryForTemplateLoading(new File("D:\\"));
 
         cfg.setIncompatibleImprovements(new Version(2, 3, 31));
         cfg.setDefaultEncoding("UTF-8");
