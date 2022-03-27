@@ -14,7 +14,7 @@ public class SaveCommand implements Command {
             mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
 
             mapper.writeValue(new File(path + "\\" + catalog.getName() + ".json"), catalog);
-            System.out.printf("Catalog data is saved in %s%s\n", path, catalog.getName());
+            System.out.printf("Catalog data is saved in %s%s.json\n", path, catalog.getName());
         } catch (IOException e) {
             e.printStackTrace();
         }

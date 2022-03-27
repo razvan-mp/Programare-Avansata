@@ -20,11 +20,9 @@ public class Main {
         myCatalog.addItem(i3);
         myCatalog.addItem(i4);
 
-        List<Item> itemList = new ArrayList<>();
-        itemList.add(i1);
-        itemList.add(i2);
-
-        Catalog myOtherCatalog = new Catalog("Second catalog", itemList);
+        Catalog myOtherCatalog = new Catalog("Second catalog");
+        myOtherCatalog.addItem(i1);
+        myOtherCatalog.addItem(i2);
 
         System.out.println("First catalog: ");
         System.out.println(myCatalog);
@@ -32,7 +30,7 @@ public class Main {
         System.out.println(myOtherCatalog);
 
         myCatalog.save();
-        myOtherCatalog.load("target/out.json");
+        myOtherCatalog = myOtherCatalog.load("target/out.json");
 
         System.out.println("Second catalog after update: ");
         System.out.println(myOtherCatalog);

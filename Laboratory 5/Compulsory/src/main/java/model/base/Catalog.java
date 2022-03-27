@@ -1,5 +1,7 @@
 package model.base;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.File;
@@ -14,7 +16,8 @@ public class Catalog {
     private String name;
     private List<Item> itemList;
 
-    public Catalog(String name, List<Item> itemList) {
+    @JsonCreator
+    public Catalog(@JsonProperty("name") String name, @JsonProperty("itemList") List<Item> itemList) {
         this.name = name;
         this.itemList = itemList;
     }
@@ -40,16 +43,9 @@ public class Catalog {
         mapper.writeValue(new File("target/out.json"), this);
     }
 
-    public void load(String filePath) throws IOException {
+    public Catalog load(String filePath) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        Catalog tmp = mapper.readValue(new File(filePath), Catalog.class);
-
-        for (var item : this.itemList) {
-            item.setId(null);
-            item.setIdentifiers(null);
-        }
-        this.itemList.clear();
-        this.itemList.addAll(tmp.itemList);
+        return mapper.readValue(new File(filePath), Catalog.class);
     }
 
     public List<Item> getItemList() {
