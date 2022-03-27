@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Catalog myCatalog = new Catalog();
+        Catalog myCatalog = new Catalog("First catalog");
         Item i1 = new Book("knuth67", "The Art of Computer Programming", "d:/books/programming/tacp.ps", 1967, "Donald E. Knuth");
         Item i2 = new Article("java17", "The Java Language Specification", "docs.oracle.com/index.html", 2021, "James Gosling & Others");
         Item i3 = new Article("java19", "Ceva", "docs.oracle.com/index.html", 2021, "James Gosling & Others");
@@ -24,7 +24,7 @@ public class Main {
         itemList.add(i1);
         itemList.add(i2);
 
-        Catalog myOtherCatalog = new Catalog(itemList);
+        Catalog myOtherCatalog = new Catalog("Second catalog", itemList);
 
         System.out.println("First catalog: ");
         System.out.println(myCatalog);

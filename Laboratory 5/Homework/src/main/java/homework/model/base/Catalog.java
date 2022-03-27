@@ -1,20 +1,18 @@
-package model.base;
+package homework.model.base;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import homework.model.interfaces.Item;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.databind.SerializationFeature;
-import model.interfaces.Item;
-
 public class Catalog {
-    private String name;
-    private List<Item> itemList;
+    protected String name;
+    protected List<Item> itemList;
 
-    public Catalog(String name, List<Item> itemList) {
+    @JsonCreator
+    public Catalog(@JsonProperty("name") String name, @JsonProperty("itemList") List<Item> itemList) {
         this.name = name;
         this.itemList = itemList;
     }
@@ -24,32 +22,12 @@ public class Catalog {
         this.itemList = new ArrayList<>();
     }
 
-    public void addItem(Item itemToAdd) {
-        if (!itemList.isEmpty()) {
-            for (var item : itemList)
-                if (item.equals(itemToAdd))
-                    return;
-        }
-        itemList.add(itemToAdd);
+    public String getName() {
+        return name;
     }
 
-    public void save() throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
-
-        mapper.writeValue(new File("target/out.json"), this);
-    }
-
-    public void load(String filePath) throws IOException {
-        ObjectMapper mapper = new ObjectMapper();
-        Catalog tmp = mapper.readValue(new File(filePath), Catalog.class);
-
-        for (var item : this.itemList) {
-            item.setId(null);
-            item.setIdentifiers(null);
-        }
-        this.itemList.clear();
-        this.itemList.addAll(tmp.itemList);
+    public void setName(String name) {
+        this.name = name;
     }
 
     public List<Item> getItemList() {
