@@ -67,7 +67,7 @@ public abstract class Item {
         return this.identifier;
     }
 
-    public List<String> getIdentifiers() {
+    public static List<String> getIdentifiers() {
         return identifiers;
     }
 

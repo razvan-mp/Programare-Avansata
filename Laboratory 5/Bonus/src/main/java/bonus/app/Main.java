@@ -1,5 +1,6 @@
 package bonus.app;
 
+import bonus.algorithm.RandomProblem;
 import bonus.algorithm.Solve;
 import bonus.commands.*;
 import bonus.model.base.Book;
@@ -26,5 +27,7 @@ public class Main {
         Solve.solveProblem(catalog);
 
         Utils.conceptList = null;
+
+        RandomProblem.create(100, 25);
     }
 }
