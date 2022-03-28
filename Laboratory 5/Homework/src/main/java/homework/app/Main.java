@@ -16,7 +16,9 @@ import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;
-
+/**
+ * Main class for program execution; takes input from keyboard
+ */
 public class Main {
     public static void main(String[] args) {
         Catalog catalog = new Catalog("");

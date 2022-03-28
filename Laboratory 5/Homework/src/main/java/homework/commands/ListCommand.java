@@ -3,6 +3,9 @@ package homework.commands;
 import homework.model.base.Catalog;
 import homework.utilitary.Utils;
 
+/**
+ * lists items in catalog
+ */
 public class ListCommand implements Command {
     public static void execute(Catalog catalog) {
         var myList = catalog.getItemList();

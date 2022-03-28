@@ -7,10 +7,18 @@ import homework.model.interfaces.Item;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Catalog class that implements a catalog structure, with a <code>name</code> and an <code>itemList</code>
+ */
 public class Catalog {
     protected String name;
     protected List<Item> itemList;
 
+    /**
+     * Used JsonCreator for parsing from Json
+     * @param name catalog name
+     * @param itemList list of items to be added to newly created Catalog
+     */
     @JsonCreator
     public Catalog(@JsonProperty("name") String name, @JsonProperty("itemList") List<Item> itemList) {
         this.name = name;

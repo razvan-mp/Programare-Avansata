@@ -7,6 +7,9 @@ import homework.model.base.Catalog;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * saves a catalog at given path
+ */
 public class SaveCommand implements Command {
     public static void execute(Catalog catalog, String path) {
         try {

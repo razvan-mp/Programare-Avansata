@@ -11,6 +11,9 @@ import java.util.regex.Pattern;
 
 import static java.lang.Integer.parseInt;
 
+/**
+ * useful functions put here for decluttering
+ */
 public class Utils {
     public static void checkYear(String toCheck) {
         try {

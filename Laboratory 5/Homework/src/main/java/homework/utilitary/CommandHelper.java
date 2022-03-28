@@ -1,5 +1,8 @@
 package homework.utilitary;
 
+/**
+ * helper class for command execution
+ */
 public class CommandHelper {
     public static boolean typeIsValid(String type) {
         return type.equals("article") || type.equals("book") || type.equals("other");

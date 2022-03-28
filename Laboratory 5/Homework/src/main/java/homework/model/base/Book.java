@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import homework.model.interfaces.Item;
 
+/**
+ * class that models an item of type Book
+ */
 public class Book extends Item {
     public Book() {
         //dummy ctr
