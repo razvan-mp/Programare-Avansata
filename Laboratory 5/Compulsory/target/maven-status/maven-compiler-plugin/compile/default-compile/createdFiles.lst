@@ -1,0 +1,8 @@
+exceptions\DuplicateIDException.class
+model\base\Catalog.class
+app\Main.class
+exceptions\InvalidYearException.class
+model\base\Other.class
+model\base\Article.class
+model\interfaces\Item.class
+model\base\Book.class
