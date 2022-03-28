@@ -9,14 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d7cb62-775a-4950-aecb-0b08cd5edbe8" name="Changes" comment="added dependencies to .jar">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Homework_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f7d7cb62-775a-4950-aecb-0b08cd5edbe8" name="Changes" comment="added dependencies">
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/mainframe/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/mainframe/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/ConfigPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/ConfigPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/ControlPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/ControlPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/DrawingPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/DrawingPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../PA2021/PA2021/Lab5/Optional" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/homework/exceptions" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -114,6 +112,7 @@
       <workItem from="1648382823927" duration="604000" />
       <workItem from="1648383513179" duration="905000" />
       <workItem from="1648404663019" duration="43000" />
+      <workItem from="1648477092791" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 5 homework">
       <created>1648381612983</created>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648383332409</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added dependencies">
+      <created>1648477289914</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648477289914</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +164,7 @@
     <MESSAGE value="Lab 5 homework" />
     <MESSAGE value="updated .jar" />
     <MESSAGE value="added dependencies to .jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dependencies to .jar" />
+    <MESSAGE value="added dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dependencies" />
   </component>
 </project>

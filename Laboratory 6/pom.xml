@@ -21,7 +21,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>bonus.app.compulsory.app.Main</mainClass>
+                            <mainClass>compulsory.app.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
