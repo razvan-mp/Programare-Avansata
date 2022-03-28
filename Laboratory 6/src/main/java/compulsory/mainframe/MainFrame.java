@@ -7,6 +7,9 @@ import compulsory.panels.DrawingPanel;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * main frame class used for arranging elements on screen
+ */
 public class MainFrame extends JFrame {
     public ConfigPanel configPanel;
     ControlPanel controlPanel;

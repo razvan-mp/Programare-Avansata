@@ -6,6 +6,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
+/**
+ * control panel class
+ */
 public class ControlPanel extends JPanel {
     final MainFrame frame;
     public JButton exitButton = new JButton("Exit");

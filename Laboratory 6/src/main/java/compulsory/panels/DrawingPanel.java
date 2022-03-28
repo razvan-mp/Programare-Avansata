@@ -5,6 +5,9 @@ import compulsory.mainframe.MainFrame;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * drawing panel class
+ */
 public class DrawingPanel extends JPanel {
     private final MainFrame frame;
     int rows, cols;

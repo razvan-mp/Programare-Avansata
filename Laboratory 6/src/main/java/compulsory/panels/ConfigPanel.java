@@ -5,6 +5,9 @@ import compulsory.mainframe.MainFrame;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
+/**
+ * configuration panel class
+ */
 public class ConfigPanel extends JPanel {
     final MainFrame frame;
     JLabel label;
