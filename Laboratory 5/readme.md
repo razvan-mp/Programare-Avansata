@@ -9,3 +9,7 @@
 - did the _Apache Tika_ bonus point
 - used _FreeMarker_
 - packed into _JAR_
+## Bonus
+- packed into _JAR_
+- used _Faker_
+- used _JGraphT_
