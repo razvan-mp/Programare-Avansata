@@ -1,10 +1,14 @@
+package compulsory.panels;
+
+import compulsory.mainframe.MainFrame;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class ControlPanel extends JPanel {
     final MainFrame frame;
-    JButton exitButton = new JButton("Exit");
+    public JButton exitButton = new JButton("Exit");
     JButton loadButton = new JButton("Load");
     JButton saveButton = new JButton("Save");
 

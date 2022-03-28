@@ -1,3 +1,7 @@
+package compulsory.panels;
+
+import compulsory.mainframe.MainFrame;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 

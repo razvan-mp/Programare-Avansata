@@ -1,8 +1,14 @@
+package compulsory.mainframe;
+
+import compulsory.panels.ConfigPanel;
+import compulsory.panels.ControlPanel;
+import compulsory.panels.DrawingPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class MainFrame extends JFrame {
-    ConfigPanel configPanel;
+    public ConfigPanel configPanel;
     ControlPanel controlPanel;
     DrawingPanel canvas;
 

@@ -1,3 +1,7 @@
+package compulsory.panels;
+
+import compulsory.mainframe.MainFrame;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -14,6 +18,7 @@ public class DrawingPanel extends JPanel {
         this.frame = frame;
         init(frame.configPanel.getRows(), frame.configPanel.getCols());
     }
+
 
     final void init(int rows, int cols) {
         this.rows = rows;
