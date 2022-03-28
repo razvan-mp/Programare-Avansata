@@ -6,6 +6,9 @@ import bonus.model.base.Catalog;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * loads a catalog from given path
+ */
 public class LoadCommand implements Command {
     public static Catalog execute(String path) {
         Catalog catalog = null;

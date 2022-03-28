@@ -3,6 +3,9 @@ package bonus.commands;
 import bonus.model.base.Catalog;
 import bonus.utilitary.Utils;
 
+/**
+ * lists items in catalog
+ */
 public class ListCommand implements Command {
     public static void execute(Catalog catalog) {
         var myList = catalog.getItemList();

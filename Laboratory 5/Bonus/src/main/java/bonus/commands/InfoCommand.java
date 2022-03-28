@@ -14,6 +14,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+/**
+ * provides info about item from catalog, based on ID
+ */
 public class InfoCommand implements Command {
     public static void execute(String identifier, Catalog catalog) throws TikaException, IOException, SAXException {
         String path = Utils.getPath(identifier, catalog);

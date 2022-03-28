@@ -11,6 +11,9 @@ import java.util.List;
 
 import static java.lang.Integer.parseInt;
 
+/**
+ * useful functions put here for decluttering
+ */
 public class Utils {
     public static List<String> conceptList = List.of("Hardware", "Networks", "Computer systems organization",
             "Computing methodologies", "Applied computing");

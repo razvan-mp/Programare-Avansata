@@ -13,6 +13,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * generates a random problem based on the constructor inputs
+ */
 public class RandomProblem {
     public static void create(int numberOfItems, int numberOfConcepts) {
         Faker faker = new Faker();
@@ -22,6 +25,7 @@ public class RandomProblem {
                 concept -> faker.internet().domainName()
         ).distinct().collect(Collectors.toList());
 
+        // create a list of random ids to insert into catalog
         List<String> listOfIds = IntStream.rangeClosed(0, numberOfItems - 1).mapToObj(
                 concept -> faker.internet().uuid()
         ).distinct().toList();

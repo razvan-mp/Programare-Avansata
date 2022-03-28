@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import bonus.model.interfaces.Item;
 
+/**
+ * class that models an item of a type other than Book or Article
+ */
 public class Other extends Item {
     public Other() {
     }

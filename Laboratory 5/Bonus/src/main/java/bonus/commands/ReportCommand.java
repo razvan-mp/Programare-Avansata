@@ -1,14 +1,24 @@
 package bonus.commands;
 
-import freemarker.template.*;
 import bonus.model.base.Catalog;
+import freemarker.template.*;
 
 import java.io.*;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
+/**
+ * class to generate HTML report for given catalog, at given path
+ */
 public class ReportCommand implements Command {
+    /**
+     * generates HTML report with given constructor parameters
+     * @param path path to generate report at
+     * @param catalog catalog to generate report for
+     * @throws IOException in case that path isn't found
+     * @throws TemplateException in case that template isn't found
+     */
     public static void execute(String path, Catalog catalog) throws IOException, TemplateException {
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_31);
 

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import bonus.model.interfaces.Item;
 
+/**
+ * class that models an item of type Article
+ */
 public class Article extends Item {
     public Article() {
     }

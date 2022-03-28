@@ -10,6 +10,9 @@ import com.github.javafaker.Faker;
 
 import static java.lang.Integer.parseInt;
 
+/**
+ * Main class for program execution
+ */
 public class Main {
     public static void main(String[] args) {
         Catalog catalog = new Catalog("myCatalog");

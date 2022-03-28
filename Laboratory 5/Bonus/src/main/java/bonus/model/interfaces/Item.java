@@ -26,6 +26,9 @@ import bonus.utilitary.Utils;
         @Type(value = Other.class, name = "other"),
 })
 
+/**
+ * class that models an item from the catalog
+ */
 public abstract class Item {
     private static List<String> identifiers = new ArrayList<>();
     private String identifier;

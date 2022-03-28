@@ -10,6 +10,9 @@ import org.jgrapht.graph.SimpleGraph;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * class for solving an instance of a problem
+ */
 public class Solve {
     public static void solveProblem(Catalog catalog) {
         if (checkConnectedGraph(catalog)) {
@@ -40,6 +43,11 @@ public class Solve {
         }
     }
 
+    /**
+     * check if graph to be created will be connected
+     * @param catalog created catalog
+     * @return true if graph will be connected, false otherwise
+     */
     private static boolean checkConnectedGraph(Catalog catalog) {
         Set<String> existingConcepts = new HashSet<>();
 

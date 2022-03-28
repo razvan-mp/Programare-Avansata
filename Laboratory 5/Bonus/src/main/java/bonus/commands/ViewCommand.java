@@ -10,6 +10,9 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+/**
+ * opens given item path in default application
+ */
 public class ViewCommand implements Command {
     public static void execute(String identifier, Catalog catalog) throws IOException {
         var myList = catalog.getItemList();
