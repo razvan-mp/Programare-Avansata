@@ -1,14 +1,16 @@
 package model.base;
+
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import model.interfaces.Item;
 
 public class Article extends Item {
-    public Article() {}
+    public Article() {
+    }
 
     @JsonCreator
     public Article(@JsonProperty("id") String id, @JsonProperty("title") String title, @JsonProperty("location") String location,
-                @JsonProperty("year") Integer year, @JsonProperty("author") String author) {
+                   @JsonProperty("year") Integer year, @JsonProperty("author") String author) {
         super(title, location, year.toString(), author, id);
     }
 

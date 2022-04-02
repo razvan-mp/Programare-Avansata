@@ -44,9 +44,13 @@ public abstract class Item {
         return this.identifier;
     }
 
-    public void setIdentifiers(List<String> value) { identifiers = value; }
+    public void setIdentifiers(List<String> value) {
+        identifiers = value;
+    }
 
-    public void setId(String id) { this.identifier = id; }
+    public void setId(String id) {
+        this.identifier = id;
+    }
 
     public String getTitle() {
         return this.title;

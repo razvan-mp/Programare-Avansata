@@ -9,7 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d7cb62-775a-4950-aecb-0b08cd5edbe8" name="Changes" comment="added dependencies" />
+    <list default="true" id="f7d7cb62-775a-4950-aecb-0b08cd5edbe8" name="Changes" comment="added dependencies">
+      <change beforePath="$PROJECT_DIR$/../Bonus/src/main/java/bonus/algorithm/Solve.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/src/main/java/bonus/algorithm/Solve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/algorithm/Solve.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/algorithm/Solve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/app/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ViewCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ViewCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/interfaces/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/interfaces/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +118,7 @@
       <workItem from="1648382823927" duration="604000" />
       <workItem from="1648383513179" duration="905000" />
       <workItem from="1648404663019" duration="43000" />
-      <workItem from="1648477092791" duration="797000" />
+      <workItem from="1648477092791" duration="1797000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 5 homework">
       <created>1648381612983</created>

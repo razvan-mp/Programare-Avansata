@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9142ac4d-6f1a-426d-a7d4-3da95361fa40" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Bonus/src/main/java/bonus/algorithm/Solve.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/src/main/java/bonus/algorithm/Solve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/algorithm/RandomProblem.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/algorithm/RandomProblem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/algorithm/Solve.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/algorithm/Solve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/app/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/AddCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/AddCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/InfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/InfoCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ListCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ListCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/LoadCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/LoadCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ReportCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ReportCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/SaveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/SaveCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ViewCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/commands/ViewCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/DuplicateIDException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/DuplicateIDException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidIDException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidIDException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidNameException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidNameException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidPathException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidPathException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidYearException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/exceptions/InvalidYearException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Catalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Catalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Other.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/base/Other.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/interfaces/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/model/interfaces/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/utilitary/CommandHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/utilitary/CommandHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bonus/target/classes/bonus/utilitary/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Bonus/target/classes/bonus/utilitary/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/base/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/base/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/interfaces/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/interfaces/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/out.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/out.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/mainframe/MainFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/ConfigPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/ControlPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 6/src/main/java/compulsory/panels/DrawingPanel.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2796kJwP8BKBEdWoDDd5DVcaX7H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9142ac4d-6f1a-426d-a7d4-3da95361fa40" name="Changes" comment="" />
+      <created>1648720097986</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648720097986</updated>
+      <workItem from="1648720101490" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

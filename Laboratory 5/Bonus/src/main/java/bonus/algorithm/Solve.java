@@ -1,6 +1,7 @@
 package bonus.algorithm;
 
 import bonus.model.base.Catalog;
+import bonus.model.interfaces.Item;
 import bonus.utilitary.Utils;
 import org.jgrapht.Graph;
 import org.jgrapht.alg.matching.HopcroftKarpMaximumCardinalityBipartiteMatching;
@@ -16,9 +17,9 @@ import java.util.Set;
 public class Solve {
     public static void solveProblem(Catalog catalog) {
         if (checkConnectedGraph(catalog)) {
-            Graph<String, DefaultEdge> graph = new SimpleGraph<String, DefaultEdge>(DefaultEdge.class);
+            Graph<String, DefaultEdge> graph = new SimpleGraph<>(DefaultEdge.class);
 
-            Set<String> firstPartition = new HashSet<>(catalog.getItemList().get(0).getIdentifiers());
+            Set<String> firstPartition = new HashSet<>(Item.getIdentifiers());
             Set<String> secondParition = new HashSet<>(Utils.conceptList);
 
             for (var vertex : firstPartition) {
