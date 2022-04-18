@@ -1,4 +1,7 @@
+package compulsory.dao;
+
 import java.sql.*;
+import compulsory.db.Database;
 
 public class CountryDAO {
     public void create(String name, Integer continentId) throws SQLException {
@@ -39,8 +42,8 @@ public class CountryDAO {
              )
         ) {
             StringBuilder stringBuilder = new StringBuilder();
-            for (int counter = 0 ; counter < rs.getFetchSize() ; counter++) {
-                stringBuilder.append(rs.next());
+            while (rs.next()) {
+                stringBuilder.append(rs.getString("name"));
                 stringBuilder.append("\n");
             }
 

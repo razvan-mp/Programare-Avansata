@@ -1,3 +1,7 @@
+package compulsory.dao;
+
+import compulsory.db.Database;
+
 import java.sql.*;
 
 public class ContinentDAO {

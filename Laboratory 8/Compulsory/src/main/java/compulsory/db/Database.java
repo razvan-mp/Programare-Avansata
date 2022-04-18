@@ -1,3 +1,5 @@
+package compulsory.db;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -27,6 +29,11 @@ public class Database {
     }
 
     public static void closeConnection() {
-
+        if (connection != null)
+            try {
+                connection.close();
+            } catch (SQLException exception) {
+                System.err.println(exception);
+            }
     }
 }
