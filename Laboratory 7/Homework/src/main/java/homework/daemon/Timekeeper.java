@@ -1,8 +1,8 @@
 package homework.daemon;
 
-import static java.lang.Thread.sleep;
-
 import homework.model.Game;
+
+import static java.lang.Thread.sleep;
 
 public class Timekeeper implements Runnable {
     Game game;
@@ -36,8 +36,10 @@ public class Timekeeper implements Runnable {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        minutes--;
-        seconds = 60;
+        if (minutes > 0) {
+            minutes--;
+            seconds = 60;
+        }
 
         while (true) {
             try {
