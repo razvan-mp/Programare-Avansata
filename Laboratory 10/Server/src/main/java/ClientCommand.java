@@ -18,7 +18,7 @@ public class ClientCommand implements Runnable {
     public void run() {
         String line;
         boolean exit = false;
-        Thread thread = new Thread(new ConnectionTimeOut(1000));
+        Thread thread = new Thread();
         thread.start();
         while (!exit) {
             try {

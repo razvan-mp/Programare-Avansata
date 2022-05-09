@@ -4,7 +4,8 @@ public class Server {
     public static boolean serverRunning = true;
 
     public Server(int port) throws IOException {
-        ServerSocketClass serverSocketClass = new ServerSocketClass(port);
+        ServerSocket serverSocketClass = new ServerSocket(port);
+
         while (serverRunning) {
             serverSocketClass.socket = serverSocketClass.server.accept();
             System.out.println("Client accepted");

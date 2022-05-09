@@ -1,16 +1,13 @@
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ServerSocketClass {
+public class ServerSocket {
     int port;
     Socket socket = null;
-    ServerSocket server = null;
+    java.net.ServerSocket server = null;
 
 
-    public ServerSocketClass(int port) {
+    public ServerSocket(int port) {
         this.port = port;
         initializeServer();
     }
@@ -18,7 +15,7 @@ public class ServerSocketClass {
     private void initializeServer() {
         // starts server and waits for a connection
         try {
-            server = new ServerSocket(port);
+            server = new java.net.ServerSocket(port);
             System.out.println("Server started");
 
             System.out.println("Waiting for a client ...");

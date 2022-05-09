@@ -18,6 +18,7 @@ public class Client {
         String line = "";
         String response;
         Scanner scanner = new Scanner(System.in);
+
         while (!line.equals("exit")) {
             line = scanner.nextLine();
             write.writeUTF(line);
