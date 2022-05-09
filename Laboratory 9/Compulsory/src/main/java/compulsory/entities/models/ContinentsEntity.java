@@ -62,7 +62,7 @@ public class ContinentsEntity extends AbstractEntity {
     }
 
     @OneToMany
-    private List<HcountriesEntity> oneToMany;
+    private List<HcountriesEntity>  oneToMany;
 
     public List<HcountriesEntity> getOneToMany() {
         return oneToMany;
