@@ -1,10 +1,14 @@
-package compulsory.entities;
+package compulsory.entities.models;
+
+import org.dom4j.tree.AbstractEntity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
+@NamedQuery(name="HcountriesEntity.findByName", query = "SELECT e from HcountriesEntity e WHERE e.name =: name")
 @Table(name = "hcountries", schema = "public", catalog = "lab8")
-public class HcountriesEntity {
+public class HcountriesEntity extends AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
@@ -73,5 +77,26 @@ public class HcountriesEntity {
         result = 31 * result + code;
         result = 31 * result + (continent != null ? continent.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "HcountriesEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", code=" + code +
+                ", continent='" + continent + '\'' +
+                '}';
+    }
+
+    @OneToMany
+    private List<CityEntity> oneToMany;
+
+    public List<CityEntity> getOneToMany() {
+        return oneToMany;
+    }
+
+    public void setOneToMany(List<CityEntity> oneToMany) {
+        this.oneToMany = oneToMany;
     }
 }

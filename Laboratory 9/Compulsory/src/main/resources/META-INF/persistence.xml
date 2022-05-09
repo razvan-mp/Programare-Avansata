@@ -5,9 +5,9 @@
              version="2.2">
     <persistence-unit name="default">
 
-        <class>compulsory.entities.ContinentsEntity</class>
-        <class>compulsory.entities.HcitiesEntity</class>
-        <class>compulsory.entities.HcountriesEntity</class>
+        <class>compulsory.entities.models.ContinentsEntity</class>
+        <class>compulsory.entities.models.CityEntity</class>
+        <class>compulsory.entities.models.HcountriesEntity</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/lab8"/>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>

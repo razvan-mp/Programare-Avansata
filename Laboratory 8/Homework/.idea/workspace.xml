@@ -5,43 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca748d59-b293-4fd1-b8c1-163eaab49ec0" name="Changes" comment="Lab 8 HW">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_hibernate_hibernate_core_5_6_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_jboss_jandex_2_2_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/Compulsory.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Laboratory 7/Homework/src/main/java/homework/daemon/Timekeeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 7/Homework/src/main/java/homework/daemon/Timekeeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Laboratory 7/Homework/src/main/resources/wordlist_ro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 7/Homework/src/main/resources/wordlist_ro.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Bonus/Compulsory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Bonus/src/main/java/compulsory/db/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Bonus/src/main/java/compulsory/entities/BonusCityEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Bonus/src/main/java/compulsory/entities/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Bonus/src/main/java/compulsory/entities/CityEntityDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Bonus/src/main/resources/databook2018.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__com_opencsv_opencsv_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__org_apache_commons_commons_text_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/libraries/Maven__org_dom4j_dom4j_2_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/repos/CityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/repos/ContinentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/repos/CountryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/repos/DataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/repos/PersistenceManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/Compulsory.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/Compulsory.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/entities/ContinentsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/entities/ContinentsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/entities/HcitiesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/entities/CityEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/entities/HcountriesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/java/compulsory/entities/HcountriesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Laboratory 9/Compulsory/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Laboratory 9/v1/lab9_1" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
@@ -108,6 +108,12 @@
       <workItem from="1651489700178" duration="8141000" />
       <workItem from="1651500671714" duration="5000" />
       <workItem from="1651500777972" duration="9000" />
+      <workItem from="1651502097441" duration="1339000" />
+      <workItem from="1651941408063" duration="25000" />
+      <workItem from="1651948012296" duration="544000" />
+      <workItem from="1652009643999" duration="13000" />
+      <workItem from="1652013058099" duration="608000" />
+      <workItem from="1652033507778" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 8 HW">
       <created>1651500158975</created>

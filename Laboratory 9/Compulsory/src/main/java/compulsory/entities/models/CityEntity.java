@@ -1,10 +1,13 @@
-package compulsory.entities;
+package compulsory.entities.models;
+
+import org.dom4j.tree.AbstractEntity;
 
 import javax.persistence.*;
 
 @Entity
+@NamedQuery(name = "CityEntity.findByName", query = "SELECT e from CityEntity e WHERE e.name =: name")
 @Table(name = "hcities", schema = "public", catalog = "lab8")
-public class HcitiesEntity {
+public class CityEntity extends AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
@@ -24,6 +27,10 @@ public class HcitiesEntity {
     @Basic
     @Column(name = "longitude")
     private Double longitude;
+    @Basic
+    @Column(name = "population")
+    private Integer population;
+
 
     public int getId() {
         return id;
@@ -73,12 +80,20 @@ public class HcitiesEntity {
         this.longitude = longitude;
     }
 
+    public Integer getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(Integer population) {
+        this.population = population;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        HcitiesEntity that = (HcitiesEntity) o;
+        CityEntity that = (CityEntity) o;
 
         if (id != that.id) return false;
         if (country != null ? !country.equals(that.country) : that.country != null) return false;
@@ -86,6 +101,7 @@ public class HcitiesEntity {
         if (capital != null ? !capital.equals(that.capital) : that.capital != null) return false;
         if (latitude != null ? !latitude.equals(that.latitude) : that.latitude != null) return false;
         if (longitude != null ? !longitude.equals(that.longitude) : that.longitude != null) return false;
+        if (population != null ? !population.equals(that.population) : that.population != null) return false;
 
         return true;
     }
@@ -98,6 +114,20 @@ public class HcitiesEntity {
         result = 31 * result + (capital != null ? capital.hashCode() : 0);
         result = 31 * result + (latitude != null ? latitude.hashCode() : 0);
         result = 31 * result + (longitude != null ? longitude.hashCode() : 0);
+        result = 31 * result + (population != null ? population.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "CityEntity{" +
+                "id=" + id +
+                ", country='" + country + '\'' +
+                ", name='" + name + '\'' +
+                ", capital=" + capital +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", population=" + population +
+                '}';
     }
 }
