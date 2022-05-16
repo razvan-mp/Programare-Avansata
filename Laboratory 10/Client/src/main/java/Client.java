@@ -23,11 +23,14 @@ public class Client {
             line = scanner.nextLine();
             write.writeUTF(line);
             response = read.readUTF();
-            System.out.println(response);
-            if ("Server stopped".equals(response)) {
+            System.out.print(response);
+            if ("Sent 'stop' command to server. It will shut down when no other users are connected.\n".equals(response)) {
                 break;
             }
-            if ("Connection timed out".equals(response)) {
+            if ("Server stopped.\n".equals(response)) {
+                break;
+            }
+            if ("Connection timed out.\n".equals(response)) {
                 break;
             }
         }
