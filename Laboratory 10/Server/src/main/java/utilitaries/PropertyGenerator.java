@@ -1,4 +1,6 @@
-import db.UserDAO;
+package utilitaries;
+
+import db.dao.UserDAO;
 import org.jgrapht.alg.BronKerboschCliqueFinder;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.SimpleGraph;

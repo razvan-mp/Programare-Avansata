@@ -1,4 +1,4 @@
-package db;
+package db.singleton;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,8 +11,7 @@ public class Database {
     private static Connection connection;
 
     public static Connection getConnection() {
-        if (connection == null)
-        {
+        if (connection == null) {
             createConnection();
             System.out.println("Connection was created");
         }

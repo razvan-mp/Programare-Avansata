@@ -1,5 +1,8 @@
-import db.UserDAO;
+package networking;
+
+import db.dao.UserDAO;
 import objects.User;
+import utilitaries.ConnectionTimeout;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -33,9 +36,8 @@ public class ClientCommand implements Runnable {
                 System.out.println(line);
                 String[] components = line.split(" ");
 
-                if (Server.isUseCounter() && Server.getUserCounter() == 0) {
-                    exit = true;
-                }
+                System.out.println(Server.getUserCounter());
+                System.out.println(Server.isUseCounter());
 
                 if (connectionTimeout.isConnectionTimedOut() && connectedUser != null) {
                     write.writeUTF("Connection timed out.\n");
@@ -45,18 +47,24 @@ public class ClientCommand implements Runnable {
 
                 switch (components[0]) {
                     case "exit" -> {
+                        Integer userCounter = Server.getUserCounter();
+                        Server.setUserCounter(userCounter - 1);
                         write.writeUTF("Client exited.\n");
                         exit = true;
                         connectionTimeout.resetTimeout();
+
+                        if (Server.isUseCounter() && Server.getUserCounter() == 0) {
+                            System.exit(0);
+                        }
                     }
                     case "stop" -> {
                         if (connectedUser == null)
                             write.writeUTF("Must be logged in to use this command.\nEnter command: ");
-                        else if (!Server.isUseCounter()){
+                        else if (!Server.isUseCounter()) {
                             Server.setUseCounter(true);
-                            Server.setUserCounter(Server.getUserCounter() - 1);
-                            write.writeUTF("Sent 'stop' command to server. It will shut down when no other users are connected.\n");
-                        }
+                            write.writeUTF("Sent 'stop' command to server. It will shut down when no other users are connected.\nEnter command: ");
+                        } else
+                            write.writeUTF("Sent 'stop' command to server. It will shut down when no other users are connected.\nEnter command: ");
                     }
                     case "register" -> {
                         if (components.length != 2)
@@ -187,7 +195,6 @@ public class ClientCommand implements Runnable {
                         connectionTimeout.resetTimeout();
                     }
                 }
-
             } catch (IOException | SQLException ex) {
                 ex.printStackTrace();
             }

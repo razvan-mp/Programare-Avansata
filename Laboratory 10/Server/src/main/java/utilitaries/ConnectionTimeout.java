@@ -1,8 +1,10 @@
+package utilitaries;
+
 import static java.lang.Thread.sleep;
 
 public class ConnectionTimeout implements Runnable {
-    private int seconds;
     private final int defaultTimer;
+    private int seconds;
     private boolean connectionTimedOut = false;
 
     public ConnectionTimeout(int seconds) {

@@ -24,9 +24,6 @@ public class Client {
             write.writeUTF(line);
             response = read.readUTF();
             System.out.print(response);
-            if ("Sent 'stop' command to server. It will shut down when no other users are connected.\n".equals(response)) {
-                break;
-            }
             if ("Server stopped.\n".equals(response)) {
                 break;
             }

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4c66c2e-22d9-4aa5-96d2-9589543093d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Laboratory 10/Server/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/db/Database.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/db/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/objects/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratory 8/Homework/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Laboratory 8/Homework/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Client/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Client/src/main/java/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Client/target/classes/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Client/target/classes/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/ClientCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/ClientCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/ConnectionTimeout.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/ConnectionTimeout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/src/main/java/db/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/ClientCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/ClientCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 10/Server/target/classes/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Laboratory 8/Homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Laboratory 8/Homework/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="29FIw4udFMkf5muimzHicpIVkcn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Laboratory11Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lab11" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="compulsory.lab11.Laboratory11Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4c66c2e-22d9-4aa5-96d2-9589543093d2" name="Changes" comment="" />
+      <created>1652702643447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652702643447</updated>
+      <workItem from="1652702644920" duration="169000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

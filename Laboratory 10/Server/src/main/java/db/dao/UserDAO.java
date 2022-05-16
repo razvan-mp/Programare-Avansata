@@ -1,4 +1,6 @@
-package db;
+package db.dao;
+
+import db.singleton.Database;
 
 import java.sql.*;
 import java.util.ArrayList;
