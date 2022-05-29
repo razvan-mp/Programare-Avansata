@@ -1,19 +1,20 @@
-package com.lab11.compulsory;
+package com.lab11.compulsory.repos;
 
+import com.lab11.compulsory.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
-    public User getUserByName(String name);
+    User getUserByName(String name);
 
     @Transactional
     @Modifying
     @Query("update User u set u.name = ?1 where u.name = ?2")
     void updateNameByNameEquals(String oldName, String newName);
 
-    public User findUserByName(String name);
+    User findUserByName(String name);
 
-    public User findUserById(Integer id);
+    User findUserById(Integer id);
 }

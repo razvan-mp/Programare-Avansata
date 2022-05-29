@@ -1,5 +1,8 @@
-package com.lab11.compulsory;
+package com.lab11.compulsory.services;
 
+import com.lab11.compulsory.model.Friendship;
+import com.lab11.compulsory.repos.FriendshipRepository;
+import com.lab11.compulsory.util.ArticulationPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,10 +13,10 @@ import java.util.stream.Collectors;
 @Service
 public class FriendshipService {
     @Autowired
-    FriendshipRepository friendshipRepository;
+    private FriendshipRepository friendshipRepository;
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @Transactional
     public void insertFriendship(Integer firstId, Integer secondId) {
@@ -67,5 +70,25 @@ public class FriendshipService {
         }
 
         return mostPopular.toString();
+    }
+
+    @Transactional
+    public String findMostImportantPeople() {
+        ArticulationPoint articulationPoint = new ArticulationPoint();
+        ArticulationPoint.Graph graph = new ArticulationPoint.Graph(userService.getAllUsers().size());
+        List<Friendship> friendshipList = friendshipRepository.findAll();
+        for (var friendship : friendshipList) {
+            graph.addEdge(friendship.getId1() - 1, friendship.getId2() - 1);
+        }
+
+        List<Integer> mostImportantPeople = articulationPoint.findArticulationPoints(graph);
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("The most important people in the network are:\n");
+        for (Integer person : mostImportantPeople) {
+            stringBuilder.append(userService.findById(person + 1).getName());
+            stringBuilder.append("\n");
+        }
+
+        return stringBuilder.toString();
     }
 }

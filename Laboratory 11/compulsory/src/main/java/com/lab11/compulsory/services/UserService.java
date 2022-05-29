@@ -1,5 +1,7 @@
-package com.lab11.compulsory;
+package com.lab11.compulsory.services;
 
+import com.lab11.compulsory.model.User;
+import com.lab11.compulsory.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -9,7 +11,7 @@ import java.util.List;
 @Service
 public class UserService {
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Transactional
     public List<User> getAllUsers() {

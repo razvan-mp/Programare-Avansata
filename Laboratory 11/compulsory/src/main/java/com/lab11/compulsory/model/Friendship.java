@@ -1,4 +1,4 @@
-package com.lab11.compulsory;
+package com.lab11.compulsory.model;
 
 import org.hibernate.annotations.Type;
 

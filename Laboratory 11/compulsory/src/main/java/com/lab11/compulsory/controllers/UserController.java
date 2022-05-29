@@ -1,6 +1,9 @@
-package com.lab11.compulsory;
+package com.lab11.compulsory.controllers;
 
+import com.lab11.compulsory.model.User;
+import com.lab11.compulsory.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -9,7 +12,7 @@ import java.util.List;
 @RequestMapping("/users")
 public class UserController {
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @GetMapping
     public List<User> getAllUsers() {
