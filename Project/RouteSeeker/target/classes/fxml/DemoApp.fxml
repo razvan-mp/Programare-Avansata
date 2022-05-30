@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+            prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="map.Controller">
+    <top>
+        <HBox fx:id="topControls" alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Slider fx:id="sliderZoom" blockIncrement="1.0" majorTickUnit="7.0" max="28.0" minorTickCount="6"
+                        showTickLabels="true" showTickMarks="true" snapToTicks="true" value="14.0" HBox.hgrow="ALWAYS"/>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0"/>
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <MapView fx:id="mapView" BorderPane.alignment="CENTER"/>
+    </center>
+    <left>
+        <Accordion fx:id="leftControls" BorderPane.alignment="CENTER">
+            <panes>
+                <TitledPane fx:id="optionsLocations" animated="true" text="Locatii">
+                    <content>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Button fx:id="buttonExpo" text="Parcul Expozitiei" maxWidth="Infinity"/>
+                                <Button fx:id="buttonRondDacia" text="Rond Dacia" maxWidth="Infinity"/>
+                                <Label text="Choose path length: "/>
+                                <TextField fx:id="selectDistance" prefWidth="120.0" promptText="meters"/>
+                                <CheckBox fx:id="checkConstrainIasi" text="Constrain to Iasi" maxWidth="Infinity"/>
+                            </children>
+                        </VBox>
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </left>
+</BorderPane>
