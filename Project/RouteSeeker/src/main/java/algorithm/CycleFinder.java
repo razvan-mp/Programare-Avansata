@@ -38,7 +38,7 @@ public class CycleFinder {
     }
 
     /**
-     * Finds the smallest node in a graph (referring to its actual node value)
+     * Finds the smallest node in a graph (refering to its actual node value)
      * @param path path to extract the smallest node from
      * @return the smallest node in the path
      */
